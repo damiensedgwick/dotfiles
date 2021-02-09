@@ -1,0 +1,36 @@
+{
+    /*
+     * editor
+     */
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "FiraCode-Retina",
+
+    /*
+     * emmet
+     */
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+
+    /*
+     * prettier
+     */
+    "prettier.requireConfig": true,
+
+    /*
+     * temrinal
+     */
+    "terminal.integrated.fontSize": 14,
+
+    /*
+     * workbench
+     */
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.sideBar.location": "right",
+    "workbench.settings.editor": "json",
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.activityBar.visible": false
+}
