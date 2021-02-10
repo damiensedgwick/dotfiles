@@ -17,11 +17,15 @@ alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
 # -------------------------------------------------------------------
 
 # Listing directories
+alias l="ls -la"
 alias ll="ls -l"
-alias la="ls -la"
+
+# Going to previous directory
+alias ..="cd .."
 
 # Changing directories
 alias cdc="cd ~/Code/"
+alias cdh="cd ~/Code/Helpers"
 alias cds="cd ~/Code/SideProjects"
 alias cdw="cd ~/Code/Websites"
 
@@ -66,7 +70,6 @@ alias gp="git push"
 # git status
 alias gs="git status"
 
-
 # -------------------------------------------------------------------
 # Node.js
 # -------------------------------------------------------------------
@@ -75,6 +78,13 @@ alias gs="git status"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# -------------------------------------------------------------------
+# Zsh auto complete
+# -------------------------------------------------------------------
+
+# case insensitive path-completion
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
 # -------------------------------------------------------------------
 # Starship.rs
