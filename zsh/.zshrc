@@ -24,10 +24,10 @@ alias ll="ls -l"
 alias ..="cd .."
 
 # Changing directories
-alias cdc="cd ~/Code/"
-alias cdh="cd ~/Code/Helpers"
-alias cds="cd ~/Code/SideProjects"
-alias cdw="cd ~/Code/Websites"
+alias cdd="cd /Volumes/Development"
+alias cda="cd /Volumes/Development/Apps"
+alias cdh="cd /Volumes/Development/Helpers"
+alias cdw="cd /Volumes/Development/Websites"
 
 # -------------------------------------------------------------------
 # Git stuff
