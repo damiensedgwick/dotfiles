@@ -4,9 +4,9 @@
      */
     "editor.minimap.enabled": false,
     "editor.formatOnSave": true,
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "editor.fontFamily": "FiraCode-Retina",
+    "editor.fontLigatures": false,
+    "editor.fontSize": 15,
+    "editor.fontFamily": "'Comic Mono', Menlo, Monaco, 'Courier New', monospace",
 
     /*
      * emmet
@@ -24,6 +24,7 @@
      * temrinal
      */
     "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "FiraCode-Retina",
 
     /*
      * workbench
@@ -32,5 +33,14 @@
     "workbench.sideBar.location": "right",
     "workbench.settings.editor": "json",
     "workbench.colorTheme": "Atom One Dark",
-    "workbench.activityBar.visible": false
+    "workbench.activityBar.visible": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
