@@ -1,18 +1,4 @@
 # -------------------------------------------------------------------
-# Mac helper aliases
-# -------------------------------------------------------------------
-
-# Show/hide hidden files finder (starting with a `.`)
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-
-# Delete auto-generated `.DS_Store` files
-alias deleteDSFiles="find . -name '.DS_Store' -type f -delete"
-
-# Flush the DNS cache (helpful if you’re playing with local DNS)
-alias flushdns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
-
-# -------------------------------------------------------------------
 # Directory commands
 # -------------------------------------------------------------------
 
@@ -26,49 +12,10 @@ alias ..="cd .."
 # Changing directories
 alias cdd="cd ~/Development"
 alias cda="cd ~/Development/Apps"
+alias cdo="cd ~/Development/OSS"
 alias cdp="cd ~/Development/Playground"
 alias cdw="cd ~/Development/Websites"
-
-# -------------------------------------------------------------------
-# Git stuff
-# -------------------------------------------------------------------
-
-# git
-alias g="git"
-
-# git add all
-alias ga="git add --all"
-
-# git commit
-alias gc="git commit -v"
-alias gc!='git commit -v --amend'
-
-# git checkout
-alias gco="git checkout"
-
-# git checkout branch
-alias gcb="git checkout -b"
-
-# git diff
-alias gd="git diff"
-
-# git fetch
-alias gf="git fetch"
-
-# git pull
-alias gl="git pull"
-
-# git merge
-alias gm="git merge"
-
-# git log
-alias glo='git log --oneline --decorate --graph'
-
-# git push
-alias gp="git push"
-
-# git status
-alias gs="git status"
+alias cdy="cd ~/Development/Yozobi"
 
 # -------------------------------------------------------------------
 # Node.js

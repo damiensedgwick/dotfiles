@@ -6,7 +6,7 @@
     "editor.formatOnSave": true,
     "editor.fontLigatures": false,
     "editor.fontSize": 15,
-    "editor.fontFamily": "'Comic Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Comic Code', Menlo, Monaco, 'Courier New', monospace",
 
     /*
      * emmet
@@ -29,7 +29,7 @@
     /*
      * workbench
      */
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.iconTheme": "vscode-great-icons",
     "workbench.sideBar.location": "right",
     "workbench.settings.editor": "json",
     "workbench.colorTheme": "Atom One Dark",
