@@ -1,3 +1,5 @@
+export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
 # -------------------------------------------------------------------
 # Directory commands
 # -------------------------------------------------------------------
@@ -18,20 +20,48 @@ alias cdw="cd ~/Development/Websites"
 alias cdy="cd ~/Development/Yozobi"
 
 # -------------------------------------------------------------------
-# Node.js
+# Git stuff
 # -------------------------------------------------------------------
 
-# Config for nvm, which lets us switch Node versions easily (https://github.com/creationix/nvm)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# git
+alias g="git"
 
-# -------------------------------------------------------------------
-# Zsh auto complete
-# -------------------------------------------------------------------
+# git add all
+alias ga="git add --all"
 
-# case insensitive path-completion
-zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+# git commit
+alias gc="git commit -v"
+alias gc!='git commit -v --amend'
+
+# git checkout
+alias gco="git checkout"
+
+# git checkout branch
+alias gcb="git checkout -b"
+
+# git diff
+alias gd="git diff"
+
+# git fetch
+alias gf="git fetch"
+
+# git pull
+alias gl="git pull"
+
+# git fetch pull
+alias gfl="git fetch; git pull"
+
+# git merge
+alias gm="git merge"
+
+# git log
+alias glo='git log --oneline --decorate --graph'
+
+# git push
+alias gp="git push"
+
+# git status
+alias gs="git status"
 
 # -------------------------------------------------------------------
 # Starship.rs
