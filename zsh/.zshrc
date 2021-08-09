@@ -1,6 +1,12 @@
 export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 # -------------------------------------------------------------------
+# Helpers
+# -------------------------------------------------------------------
+
+alias rn="npx react-native init $1 --template react-native-template-typescript"
+
+# -------------------------------------------------------------------
 # Directory commands
 # -------------------------------------------------------------------
 
@@ -13,11 +19,6 @@ alias ..="cd .."
 
 # Changing directories
 alias cdd="cd ~/Development"
-alias cda="cd ~/Development/Apps"
-alias cdo="cd ~/Development/OSS"
-alias cdp="cd ~/Development/Playground"
-alias cdw="cd ~/Development/Websites"
-alias cdy="cd ~/Development/Yozobi"
 
 # -------------------------------------------------------------------
 # Git stuff
@@ -28,6 +29,9 @@ alias g="git"
 
 # git add all
 alias ga="git add --all"
+
+# git branch
+alias gb="git branch"
 
 # git commit
 alias gc="git commit -v"
@@ -62,6 +66,12 @@ alias gp="git push"
 
 # git status
 alias gs="git status"
+
+# -------------------------------------------------------------------
+# ZSH
+# -------------------------------------------------------------------
+
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # -------------------------------------------------------------------
 # Starship.rs

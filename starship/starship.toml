@@ -1,6 +1,8 @@
 # Don't print a new line at the start of the prompt
 add_newline = false
 
+command_timeout = 2500
+
 [line_break]
 disabled = true
 
@@ -12,10 +14,11 @@ symbol = " "
 format = "on [$symbol$branch]($style) "
 
 [golang]
+disabled = true
 format = "using [$symbol$version]($style) "
 
 [nodejs]
-format = "using [$symbol$version]($style) "
+disabled = true
 
 [package]
 format = "[$symbol$version]($style) "
