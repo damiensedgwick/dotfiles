@@ -1,4 +1,8 @@
 export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/Development/Go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
 
 # -------------------------------------------------------------------
 # Helpers
@@ -71,6 +75,7 @@ alias gs="git status"
 # ZSH
 # -------------------------------------------------------------------
 
+# suggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # -------------------------------------------------------------------
