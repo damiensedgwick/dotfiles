@@ -9,9 +9,6 @@
     "editor.lineHeight": 1.35,
     "editor.fontFamily": "JetBrains Mono",
     "editor.cursorSmoothCaretAnimation": true,
-    "editor.rulers": [80],
-    "editor.wordWrapColumn": 80,
-    "editor.wordWrap": "on",
 
     /*
      * emmet
