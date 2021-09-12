@@ -5,8 +5,13 @@
     "editor.minimap.enabled": false,
     "editor.formatOnSave": true,
     "editor.fontLigatures": false,
-    "editor.fontSize": 15,
-    "editor.fontFamily": "'Comic Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.35,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.rulers": [80],
+    "editor.wordWrapColumn": 80,
+    "editor.wordWrap": "on",
 
     /*
      * emmet
@@ -23,17 +28,18 @@
     /*
      * temrinal
      */
+     "terminal.integrated.tabs.enabled": true,
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontFamily": "'Comic Code', Menlo, Monaco, 'Courier New', monospace",
-    "terminal.integrated.tabs.enabled": true,
-
+    "terminal.integrated.lineHeight": 1.35,
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    
     /*
      * workbench
      */
     "workbench.iconTheme": "vscode-great-icons",
     "workbench.sideBar.location": "right",
     "workbench.settings.editor": "json",
-    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "workbench.colorTheme": "GitHub Dark",
     "workbench.activityBar.visible": false,
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -53,5 +59,11 @@
     },
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "breadcrumbs.enabled": false,
+    "editor.renderWhitespace": "none",
 }
