@@ -2,7 +2,6 @@
     /*
      * editor
      */
-    "breadcrumbs.enabled": false,
     "editor.minimap.enabled": false,
     "editor.formatOnSave": true,
     "editor.fontLigatures": false,
@@ -11,6 +10,12 @@
     "editor.fontFamily": "JetBrains Mono",
     "editor.cursorSmoothCaretAnimation": true,
     "editor.renderWhitespace": "boundary",
+    "workbench.editor.showTabs": false,
+
+    /*
+     * breadcrumbs 
+     */
+    "breadcrumbs.enabled": false,
 
     /*
      * emmet
@@ -24,15 +29,31 @@
      */
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
-    
+
     /*
      * languages
      */
-     "go.toolsManagement.autoUpdate": true,
      "typescript.updateImportsOnFileMove.enabled": "always",
-     "[typescript, typescriptreact, javascript, javascriptreact, json, jsonc, html]": {
+     "[typescript]": {
          "editor.defaultFormatter": "esbenp.prettier-vscode"
      },
+     "[typescriptreact]": {
+         "editor.defaultFormatter": "esbenp.prettier-vscode"
+     },
+     "[json]": {
+         "editor.defaultFormatter": "esbenp.prettier-vscode"
+     },
+     "[javascript]": {
+         "editor.defaultFormatter": "esbenp.prettier-vscode"
+     },
+     "[jsonc]": {
+         "editor.defaultFormatter": "esbenp.prettier-vscode"
+     },
+     "[html]": {
+         "editor.defaultFormatter": "esbenp.prettier-vscode"
+     },
+     "go.toolsManagement.autoUpdate": true,
+     
 
     /*
      * prettier
