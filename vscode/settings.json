@@ -11,12 +11,12 @@
     "editor.cursorSmoothCaretAnimation": true,
     "editor.renderWhitespace": "boundary",
     "workbench.editor.showTabs": false,
-
+    
     /*
-     * breadcrumbs 
+     * 
      */
-    "breadcrumbs.enabled": false,
-
+    "explorer.autoReveal": false,
+    
     /*
      * emmet
      */
