@@ -1,14 +1,19 @@
 export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/Development/Go
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-
 
 # -------------------------------------------------------------------
 # Helpers
 # -------------------------------------------------------------------
 
-alias rn="npx react-native init $1 --template react-native-template-typescript"
+# Set default xcode formatting
+set -e
+
+defaults write com.apple.dt.Xcode DVTTextEditorTrimTrailingWhitespace -bool YES
+defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool YES
+
+defaults write com.apple.dt.Xcode DVTTextIndentTabWidth -int 2
+defaults write com.apple.dt.Xcode DVTTextIndentWidth -int 2
+
+defaults write com.apple.dt.Xcode DVTTextPageGuideLocation -int 100
 
 # -------------------------------------------------------------------
 # Directory commands
