@@ -1,84 +1,82 @@
 {
-    /*
-     * editor
-     */
-    "editor.minimap.enabled": false,
-    "editor.formatOnSave": true,
-    "editor.fontLigatures": false,
-    "editor.fontSize": 14,
-    "editor.lineHeight": 1.35,
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.renderWhitespace": "boundary",
-    "workbench.editor.showTabs": false,
-    
-    /*
-     * 
-     */
-    "explorer.autoReveal": false,
-    
-    /*
-     * emmet
-     */
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
+  /*
+   * editor
+   */
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": false,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.35,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.renderWhitespace": "boundary",
+  "workbench.editor.showTabs": false,
 
-    /*
-     * git
-     */
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
+  "debug.openDebug": "neverOpen",
 
-    /*
-     * languages
-     */
-     "typescript.updateImportsOnFileMove.enabled": "always",
-     "[typescript]": {
-         "editor.defaultFormatter": "esbenp.prettier-vscode"
-     },
-     "[typescriptreact]": {
-         "editor.defaultFormatter": "esbenp.prettier-vscode"
-     },
-     "[json]": {
-         "editor.defaultFormatter": "esbenp.prettier-vscode"
-     },
-     "[javascript]": {
-         "editor.defaultFormatter": "esbenp.prettier-vscode"
-     },
-     "[jsonc]": {
-         "editor.defaultFormatter": "esbenp.prettier-vscode"
-     },
-     "[html]": {
-         "editor.defaultFormatter": "esbenp.prettier-vscode"
-     },
-     "go.toolsManagement.autoUpdate": true,
-     
+  /*
+   * emmet
+   */
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
 
-    /*
-     * prettier
-     */
-    "prettier.requireConfig": true,
+  /*
+   * git
+   */
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
 
-    /*
-     * security
-     */
-    "security.workspace.trust.untrustedFiles": "open",
+  /*
+   * languages
+   */
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.enabled": "all",
 
-    /*
-     * temrinal
-     */
-    "terminal.integrated.tabs.enabled": true,
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.lineHeight": 1.35,
-    "terminal.integrated.fontFamily": "JetBrains Mono",
-    
-    /*
-     * workbench
-     */
-    "workbench.iconTheme": "vscode-great-icons",
-    "workbench.sideBar.location": "right",
-    "workbench.settings.editor": "json",
-    "workbench.colorTheme": "GitHub Dark",
-    "workbench.activityBar.visible": false,
+  /*
+   * prettier
+   */
+  "prettier.requireConfig": true,
+
+  /*
+   * security
+   */
+  "security.workspace.trust.untrustedFiles": "open",
+
+  /*
+   * temrinal
+   */
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.35,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
+
+  /*
+   * workbench
+   */
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.settings.editor": "json",
+  "workbench.colorTheme": "Serendipity Dark",
+  "workbench.activityBar.visible": false
 }
