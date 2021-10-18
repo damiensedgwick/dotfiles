@@ -10,7 +10,6 @@
   "editor.fontFamily": "JetBrains Mono",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.renderWhitespace": "boundary",
-  "workbench.editor.showTabs": false,
 
   "debug.openDebug": "neverOpen",
 
