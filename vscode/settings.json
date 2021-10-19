@@ -7,9 +7,11 @@
   "editor.fontLigatures": false,
   "editor.fontSize": 14,
   "editor.lineHeight": 1.35,
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.letterSpacing": 0.5,
+  "editor.fontFamily": "Rec Mono Casual",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.renderWhitespace": "boundary",
+  "workbench.editor.showTabs": false,
 
   "debug.openDebug": "neverOpen",
 
@@ -68,7 +70,8 @@
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.35,
-  "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontFamily": "Rec Mono Casual",
+  "terminal.integrated.letterSpacing": 0.5,
 
   /*
    * workbench
