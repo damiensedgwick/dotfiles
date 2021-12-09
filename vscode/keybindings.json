@@ -56,30 +56,5 @@
     "key": "shift+cmd+c",
     "command": "-workbench.action.terminal.openNativeConsole",
     "when": "!terminalFocus"
-  },
-  {
-    "key": "cmd+k w",
-    "command": "-workbench.action.closeEditorsInGroup"
-  },
-  {
-    "key": "cmd+k cmd+f",
-    "command": "workbench.files.action.collapseExplorerFolders"
-  },
-  {
-    "key": "cmd+k cmd+e",
-    "command": "workbench.action.closeAllEditors"
-  },
-  {
-    "key": "cmd+k cmd+w",
-    "command": "-workbench.action.closeAllEditors"
-  },
-  {
-    "key": "cmd+k cmd+l",
-    "command": "-editor.toggleFold",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "cmd+k cmd+l",
-    "command": "workbench.action.clearRecentFiles"
   }
 ]
