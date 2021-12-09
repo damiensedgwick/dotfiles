@@ -1,19 +1,11 @@
-export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 
-# -------------------------------------------------------------------
-# Helpers
-# -------------------------------------------------------------------
+export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/$HOME/go/bin
 
-# Set default xcode formatting
-set -e
-
-defaults write com.apple.dt.Xcode DVTTextEditorTrimTrailingWhitespace -bool YES
-defaults write com.apple.dt.Xcode DVTTextEditorTrimWhitespaceOnlyLines -bool YES
-
-defaults write com.apple.dt.Xcode DVTTextIndentTabWidth -int 2
-defaults write com.apple.dt.Xcode DVTTextIndentWidth -int 2
-
-defaults write com.apple.dt.Xcode DVTTextPageGuideLocation -int 100
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 # -------------------------------------------------------------------
 # Directory commands
@@ -77,7 +69,7 @@ alias gp="git push"
 alias gs="git status"
 
 # -------------------------------------------------------------------
-# ZSH
+# Plugins
 # -------------------------------------------------------------------
 
 # suggestions
@@ -89,3 +81,8 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # custom prompt via https://starship.rs
 eval "$(starship init zsh)"
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
