@@ -7,7 +7,7 @@ command_timeout = 2500
 disabled = true
 
 [aws]
-disabled = true
+disabled = false
 
 [git_branch]
 symbol = " "
