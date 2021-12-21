@@ -1,0 +1,9 @@
+<application>
+  <component name="FileTypeManager" version="18">
+    <extensionMap>
+      <mapping pattern=".firebaserc" type="PLAIN_TEXT" />
+      <mapping pattern=".npmrc-example" type="PLAIN_TEXT" />
+      <removed_mapping ext="graphqlconfig" approved="true" type="JSON" />
+    </extensionMap>
+  </component>
+</application>

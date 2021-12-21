@@ -86,3 +86,6 @@ eval "$(starship init zsh)"
 # Please make sure this block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
 #### END FIG ENV VARIABLES ####
+
+export PNPM_HOME="/Users/damienk.sedgwick/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
