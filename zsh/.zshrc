@@ -4,8 +4,7 @@
 #### END FIG ENV VARIABLES ####
 
 export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/$HOME/go/bin
-
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+export PATH=$PATH:~/.composer/vendor/bin
 
 # -------------------------------------------------------------------
 # Directory commands
@@ -69,11 +68,17 @@ alias gp="git push"
 alias gs="git status"
 
 # -------------------------------------------------------------------
-# Plugins
+# Node Version Manager
 # -------------------------------------------------------------------
 
-# suggestions
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# -------------------------------------------------------------------
+# AWSP - aws profile switcher
+# -------------------------------------------------------------------
+alias awsp="source _awsp"
 
 # -------------------------------------------------------------------
 # Starship.rs
@@ -86,6 +91,3 @@ eval "$(starship init zsh)"
 # Please make sure this block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
 #### END FIG ENV VARIABLES ####
-
-export PNPM_HOME="/Users/damienk.sedgwick/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
