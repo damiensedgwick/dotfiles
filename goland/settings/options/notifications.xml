@@ -1,6 +1,0 @@
-<application>
-  <component name="NotificationConfiguration">
-    <notification groupId="System shortcuts conflicts" displayType="NONE" />
-    <notification groupId="Vcs Notifications" displayType="NONE" />
-  </component>
-</application>

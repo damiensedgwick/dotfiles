@@ -1,8 +1,0 @@
-NodeJS
-aws.toolkit
-com.intellij.lang.jsgraphql
-com.jinsihou.react.snippets
-com.mallowigi
-com.markskelton.one-dark-theme
-intellij.prettierJS
-ru.adelf.idea.dotenv
