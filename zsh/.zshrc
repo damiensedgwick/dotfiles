@@ -13,6 +13,19 @@ alias ..="cd .."
 alias cdd="cd ~/Development"
 
 # -------------------------------------------------------------------
+# Development commands
+# -------------------------------------------------------------------
+
+# pnpm
+alias pn="pnpm"
+
+# nextjs
+alias cna="pnpm dlx create-next-app@latest --typescript"
+
+# create-react-app
+alias cra="pnpm dlx create-react-app $0 --template typescript"
+
+# -------------------------------------------------------------------
 # Git stuff
 # -------------------------------------------------------------------
 
