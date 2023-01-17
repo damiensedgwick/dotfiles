@@ -4,6 +4,9 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
   'tsserver',
+  'denols',
+  'bashls',
+  'jsonls',
   'eslint',
   'gopls',
   'sumneko_lua',
@@ -75,4 +78,3 @@ lsp.setup()
 vim.diagnostic.config({
     virtual_text = true,
 })
-
