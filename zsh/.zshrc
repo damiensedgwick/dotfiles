@@ -1,7 +1,6 @@
 # -------------------------------------------------------------------
 # Directory commands
 # -------------------------------------------------------------------
-
 # Listing directories
 alias l="ls -la"
 alias ll="ls -l"
@@ -15,6 +14,8 @@ alias cdd="cd ~/Development"
 # -------------------------------------------------------------------
 # Development commands
 # -------------------------------------------------------------------
+# neovim
+alias vim="nvim"
 
 # pnpm
 alias pn="pnpm"
@@ -28,7 +29,6 @@ alias cra="pnpm dlx create-react-app $0 --template typescript"
 # -------------------------------------------------------------------
 # Git stuff
 # -------------------------------------------------------------------
-
 # git
 alias g="git"
 
@@ -40,7 +40,6 @@ alias gb="git branch"
 
 # git commit
 alias gc="git commit -v"
-alias gc!='git commit -v --amend'
 
 # git checkout
 alias gco="git checkout"
@@ -72,8 +71,7 @@ alias gp="git push"
 # git status
 alias gs="git status"
 
-# Node Version Manager
 # -------------------------------------------------------------------
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Starship
+# -------------------------------------------------------------------
+eval "$(starship init zsh)"
