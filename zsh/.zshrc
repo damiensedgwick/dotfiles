@@ -72,6 +72,13 @@ alias gp="git push"
 alias gs="git status"
 
 # -------------------------------------------------------------------
+# Node version manager
+# -------------------------------------------------------------------
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+
+# -------------------------------------------------------------------
 # Starship
 # -------------------------------------------------------------------
 eval "$(starship init zsh)"
