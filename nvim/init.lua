@@ -95,6 +95,9 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 -- [[ Setting options ]]
 -- See `:help vim.o`
 
+-- Turn on relative line numbers
+vim.o.relativenumber = true
+
 -- Set highlight on search
 vim.o.hlsearch = false
 
@@ -131,6 +134,12 @@ vim.o.completeopt = 'menuone,noselect'
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
+-- exit file explorer
+vim.keymap.set("n", "<leader>qq", vim.cmd.Ex)
+
+-- intellisense
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
@@ -221,7 +230,7 @@ vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { de
 -- See `:help nvim-treesitter`
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
-  ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'typescript', 'help', 'vim' },
+  ensure_installed = { 'go', 'lua', 'rust', 'typescript', 'help', 'vim' },
 
   highlight = { enable = true },
   indent = { enable = true, disable = { 'python' } },
