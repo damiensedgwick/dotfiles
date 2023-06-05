@@ -11,12 +11,12 @@ alias ..="cd .."
 # Changing directories
 alias cdd="cd ~/Development"
 
+# Delete all .DS_Store files
+alias dds="find . -name '.DS_Store' -type f -delete"
+
 # -------------------------------------------------------------------
 # Development commands
 # -------------------------------------------------------------------
-# neovim
-alias vim="nvim"
-
 # pnpm
 alias pn="pnpm"
 
