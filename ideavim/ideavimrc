@@ -1,0 +1,22 @@
+let mapleader = " "
+
+set showmode
+set relativenumber
+
+" plugin settings
+Plug 'machakann/vim-highlightedyank'
+Plug 'preservim/nerdtree'
+
+" edit ideavim config
+nnoremap <leader>vv :e ~/.ideavimrc<CR>
+nnoremap <leader>vr :source ~/.ideavimrc<CR>
+
+" ide actions
+nmap <leader>l <Action>(ReformatCode)
+nmap <leader>f <Action>(GotoFile)
+nmap <leader>a <Action>(GotoAction)
+
+" code navigation
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gb :action Back<CR>
+nnoremap gf :action Forward<CR>
