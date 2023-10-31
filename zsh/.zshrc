@@ -5,6 +5,8 @@ alias l="ls -la"
 alias ll="ls -l"
 alias ..="cd .."
 alias cdd="cd ~/Development"
+alias cdj="cd ~/Development/js"
+
 alias dds="find . -name '.DS_Store' -type f -delete"
 
 # -------------------------------------------------------------------
