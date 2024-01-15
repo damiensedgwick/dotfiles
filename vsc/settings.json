@@ -14,6 +14,9 @@
     "git.autofetch": true,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
+    // Window
+    "window.confirmBeforeClose": "always",
+    "window.restoreWindows": "none",
     // Workbench
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
@@ -21,4 +24,5 @@
     "workbench.colorTheme": "GitHub Dark",
     // Vim
     "vim.smartRelativeLine": true,
+    "workbench.activityBar.location": "hidden"
 }
