@@ -1,8 +1,0 @@
-source ~/.vimrc
-
-nmap gb <Action>(Back)
-nmap ge <Action>(ShowErrorDescription)
-nmap gf <Action>(Forward)
-
-nmap <leader>f <Action>(FindUsages)
-nmap <leader>h <Action>(HighlightUsagesInFile)
