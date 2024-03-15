@@ -1,1 +1,0 @@
-/home/dks/.asdf/completions/asdf.fish
