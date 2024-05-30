@@ -1,28 +1,105 @@
 {
-    // Editor
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.fontFamily": "ComicShannsMono Nerd Font",
-    "editor.fontSize": 17,
-    "editor.formatOnSave": true,
-    "editor.inlineSuggest.enabled": true,
-    "editor.lineHeight": 1.5,
-    "editor.minimap.enabled": false,
-    "editor.rulers": [
-        80,
-        100
-    ],
-    // formatting
-        "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // Editor
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "ComicShannsMono Nerd Font",
+  "editor.fontSize": 17,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineHeight": 1.5,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [80, 100],
+  // formatting
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // terminal
+  "terminal.integrated.fontSize": 15,
+  // vim
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.smartRelativeLine": true,
+  "vim.normalModeKeyBindings": [
+    // buffers
+    {
+      "before": ["S-h"],
+      "commands": [":bprevious"]
     },
-    // terminal
-    "terminal.integrated.fontSize": 15,
-    // vim
-    "vim.smartRelativeLine": true,
-    // window
-    "window.restoreWindows": "none",
-    // workbench
-    "workbench.activityBar.location": "hidden",
-    "workbench.sideBar.location": "right",
-    "workbench.startupEditor": "none",
+    {
+      "before": ["S-l"],
+      "commands": [":bnext"]
+    },
+    // splits
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
+    },
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // file tree
+    {
+      "before": ["leader", "n", "e"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+    // a lil something extra
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  // window
+  "window.restoreWindows": "none",
+  // workbench
+  "workbench.activityBar.location": "hidden",
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none"
 }
+
