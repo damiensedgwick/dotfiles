@@ -69,8 +69,6 @@
     },
     // a lil something extra
     { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "q"], "commands": [":q!"] },
-    { "before": ["leader", "x"], "commands": [":x!"] },
     {
       "before": ["[", "d"],
       "commands": ["editor.action.marker.prev"]
