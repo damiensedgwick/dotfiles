@@ -2,8 +2,7 @@
 # directory
 # -------------------------------------------------------------------
 alias ..="cd .."
-alias cdp="cd ~/Personal"
-alias cdw="cd ~/Work"
+alias cdd="cd ~/Development"
 
 # -------------------------------------------------------------------
 # git
@@ -39,13 +38,13 @@ alias lt='ls --tree'
 alias dds="find . -name '.DS_Store' -type f -delete"
 
 # -------------------------------------------------------------------
-# neovim
+# mise
 # -------------------------------------------------------------------
-alias nv="nvim ."
+eval "$(mise activate zsh)"
 
 # -------------------------------------------------------------------
-# nvm (node version manager)
+# bun
 # -------------------------------------------------------------------
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "/Users/damiensedgwick/.bun/_bun" ] && source "/Users/damiensedgwick/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
