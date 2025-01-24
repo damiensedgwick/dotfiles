@@ -1,13 +1,19 @@
 {
-  // Editor
+  // breadcrumbs
+  "breadcrumbs.enabled": false,
+
+  // editor
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "ComicShannsMono Nerd Font",
+  "editor.fontFamily": "JetBrainsMono NF",
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.lineHeight": 1.75,
+  "editor.lineHeight": 1.85,
   "editor.minimap.enabled": false,
   "editor.rulers": [80, 90, 100],
+  "editor.stickyScroll.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
 
   // formatting
   "[css]": {
@@ -37,6 +43,10 @@
 
   // git
   "git.autofetch": true,
+  "git.confirmSync": false,
+
+  // security
+  "security.promptForLocalFileProtocolHandling": false,
 
   // terminal
   "terminal.integrated.fontSize": 16,
@@ -80,5 +90,9 @@
 
   // workbench
   "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "One Monokai",
+  "workbench.statusBar.visible": false,
+  "workbench.editor.showTabs": "none",
+  "workbench.settings.editor": "json"
 }
