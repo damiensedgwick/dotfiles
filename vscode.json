@@ -2,55 +2,63 @@
   // breadcrumbs
   "breadcrumbs.enabled": false,
 
+  // chat
+  "chat.commandCenter.enabled": false,
+  "chat.editor.fontWeight": "light",
+
   // editor
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontFamily": "JetBrainsMono NF",
-  "editor.fontSize": 16,
+  "editor.fontSize": 17,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.lineHeight": 1.85,
+  "editor.lineHeight": 1.6,
   "editor.minimap.enabled": false,
   "editor.rulers": [80, 90, 100],
   "editor.stickyScroll.enabled": false,
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
+  "editor.codeLensFontFamily": "JetBrainsMono NF",
+  "editor.inlayHints.fontFamily": "JetBrainsMono NF",
+  "editor.fontWeight": 400,
 
   // formatting
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
 
   // git
   "git.autofetch": true,
   "git.confirmSync": false,
-
+  "git.openRepositoryInParentFolders": "always",
   // security
   "security.promptForLocalFileProtocolHandling": false,
 
   // terminal
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.lineHeight": 1.25,
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.lineHeight": 1.6,
+  "terminal.integrated.fontFamily": "JetBrainsMono NF",
 
   // vim
   "vim.leader": "<Space>",
@@ -87,12 +95,12 @@
 
   // window
   "window.restoreWindows": "none",
+  "window.autoDetectColorScheme": true,
 
   // workbench
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
+  "workbench.editor.showTabs": "multiple",
   "workbench.colorTheme": "One Monokai",
-  "workbench.statusBar.visible": false,
-  "workbench.editor.showTabs": "none",
-  "workbench.settings.editor": "json"
+  "workbench.preferredDarkColorTheme": "One Monokai"
 }
