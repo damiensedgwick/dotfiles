@@ -235,6 +235,7 @@
   ],
   // Window
   "window.restoreWindows": "none",
+  "window.autoDetectColorScheme": true,
   // Workbench
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
