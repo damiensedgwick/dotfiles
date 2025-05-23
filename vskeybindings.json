@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaults
 [
   // toggle side bar
   {
@@ -10,5 +9,29 @@
     "command": "workbench.files.action.focusFilesExplorer",
     "key": "ctrl+e",
     "when": "editorTextFocus"
+  },
+  // create new file
+  {
+    "key": "n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // rename a file
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  // create new directory
+  {
+    "key": "shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  // delete a file
+  {
+    "command": "deleteFile",
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus"
   }
 ]
