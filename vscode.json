@@ -1,41 +1,69 @@
 {
-  // Editor
-  "editor.minimap.enabled": false,
+  // ----------------------------------------
+  // Emmet
+  // ----------------------------------------
+  "emmet.triggerExpansionOnTab": true,
+  // ----------------------------------------
+  // Editor settings
+  // ----------------------------------------
   "editor.fontFamily": "ComicShannsMono Nerd Font",
   "editor.fontSize": 18,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
   "editor.lineHeight": 1.5,
+  "editor.minimap.enabled": false,
   "editor.rulers": [
     80,
     100
   ],
-  "editor.formatOnSave": true,
-  "editor.inlineSuggest.enabled": true,
-  // Emmet
-  "emmet.triggerExpansionOnTab": true,
+  // ----------------------------------------
+  // Explorer & File Nesting
+  // ----------------------------------------
+  "explorer.fileNesting.patterns": {
+    "*.db": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.s3db": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.ts": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "tsconfig.json": "tsconfig.*.json"
+  },
+  // ----------------------------------------
   // Extensions
+  // ----------------------------------------
   "extensions.ignoreRecommendations": true,
-  // Formatting and Linting
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  // ----------------------------------------
   // Git
+  // ----------------------------------------
   "git.autofetch": true,
+  "git.confirmSync": true,
   "git.enableSmartCommit": true,
-  "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "never",
+  // ----------------------------------------
+  // Security
+  // ----------------------------------------
+  "security.promptForLocalFileProtocolHandling": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  // ----------------------------------------
   // Terminal
+  // ----------------------------------------
   "terminal.integrated.fontFamily": "ComicShannsMono Nerd Font",
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.lineHeight": 1.5,
+  // ----------------------------------------
   // TypeScript
+  // ----------------------------------------
   "typescript.updateImportsOnFileMove.enabled": "always",
-  // Vim
-  "vim.leader": "<Space>",
+  // ----------------------------------------
+  // Vim keybindings & settings
+  // ----------------------------------------
   "vim.hlsearch": true,
-  "vim.smartRelativeLine": true,
+  "vim.leader": "<Space>",
   "vim.normalModeKeyBindings": [
     // buffers
     {
@@ -187,6 +215,7 @@
       ]
     }
   ],
+  "vim.smartRelativeLine": true,
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
     {
@@ -233,16 +262,15 @@
       ]
     }
   ],
+  // ----------------------------------------
   // Window
-  "window.restoreWindows": "none",
+  // ----------------------------------------
   "window.autoDetectColorScheme": true,
+  "window.restoreWindows": "none",
+  // ----------------------------------------
   // Workbench
-  "workbench.startupEditor": "none",
+  // ----------------------------------------
   "workbench.settings.editor": "json",
-  // Zig
-  "remote.defaultExtensionsIfInstalledLocally": [
-    "GitHub.copilot",
-    "GitHub.copilot-chat",
-    "GitHub.vscode-pull-request-github"
-  ]
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none"
 }
