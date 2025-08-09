@@ -38,6 +38,15 @@
   // ----------------------------------------
   "extensions.ignoreRecommendations": true,
   // ----------------------------------------
+  // Formatting
+  // ----------------------------------------,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // ----------------------------------------
   // Git
   // ----------------------------------------
   "git.autofetch": true,
