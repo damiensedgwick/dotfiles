@@ -1,11 +1,7 @@
 {
-  // ----------------------------------------
-  // Emmet
-  // ----------------------------------------
+  "diffEditor.experimental.useTrueInlineView": true,
+  "diffEditor.renderSideBySideInlineBreakpoint": 5000,
   "emmet.triggerExpansionOnTab": true,
-  // ----------------------------------------
-  // Editor settings
-  // ----------------------------------------
   "editor.fontFamily": "ComicShannsMono Nerd Font",
   "editor.fontSize": 18,
   "editor.formatOnSave": true,
@@ -13,9 +9,6 @@
   "editor.lineHeight": 1.5,
   "editor.minimap.enabled": false,
   "editor.rulers": [80, 90, 100],
-  // ----------------------------------------
-  // Explorer & File Nesting
-  // ----------------------------------------
   "explorer.fileNesting.patterns": {
     "*.db": "${capture}.${extname}-*",
     "*.db3": "${capture}.${extname}-*",
@@ -30,13 +23,7 @@
     "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
     "tsconfig.json": "tsconfig.*.json"
   },
-  // ----------------------------------------
-  // Extensions
-  // ----------------------------------------
   "extensions.ignoreRecommendations": true,
-  // ----------------------------------------
-  // Formatting
-  // ----------------------------------------,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -46,34 +33,16 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "php-cs-fixer.onsave": true,
-  "php-cs-fixer.rules": "@PSR12",
-  "php-cs-fixer.config": "/Users/damiensedgwick/.vscode/.php-cs-fixer.php",
-  // ----------------------------------------
-  // Git
-  // ----------------------------------------
   "git.autofetch": true,
   "git.confirmSync": true,
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
-  // ----------------------------------------
-  // Security
-  // ----------------------------------------
   "security.promptForLocalFileProtocolHandling": false,
   "security.workspace.trust.untrustedFiles": "open",
-  // ----------------------------------------
-  // Terminal
-  // ----------------------------------------
   "terminal.integrated.fontFamily": "ComicShannsMono Nerd Font",
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.lineHeight": 1.5,
-  // ----------------------------------------
-  // TypeScript
-  // ----------------------------------------
   "typescript.updateImportsOnFileMove.enabled": "always",
-  // ----------------------------------------
-  // Vim keybindings & settings
-  // ----------------------------------------
   "vim.hlsearch": true,
   "vim.smartRelativeLine": true,
   "vim.leader": "<Space>",
@@ -89,14 +58,9 @@
       "commands": [":w!"]
     }
   ],
-  // ----------------------------------------
-  // Window
-  // ----------------------------------------
   "window.autoDetectColorScheme": true,
   "window.restoreWindows": "none",
-  // ----------------------------------------
-  // Workbench
-  // ----------------------------------------
+  "window.openFilesInNewWindow": "on",
   "workbench.activityBar.location": "hidden",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
