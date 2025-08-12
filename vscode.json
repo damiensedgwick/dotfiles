@@ -1,4 +1,6 @@
 {
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.composer.usageSummaryDisplay": "always",
   "diffEditor.experimental.useTrueInlineView": true,
   "diffEditor.renderSideBySideInlineBreakpoint": 5000,
   "emmet.triggerExpansionOnTab": true,
@@ -33,6 +35,10 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[php]": {
+    "editor.defaultFormatter": "open-southeners.laravel-pint"
+  },
+  "laravel-pint.enable": true,
   "git.autofetch": true,
   "git.confirmSync": true,
   "git.enableSmartCommit": true,
@@ -64,6 +70,8 @@
   "workbench.activityBar.location": "hidden",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
+  "workbench.preferredDarkColorTheme": "Cursor Dark",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false
 }
