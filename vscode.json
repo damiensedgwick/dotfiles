@@ -26,6 +26,9 @@
     "tsconfig.json": "tsconfig.*.json"
   },
   "extensions.ignoreRecommendations": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -35,10 +38,6 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[php]": {
-    "editor.defaultFormatter": "open-southeners.laravel-pint"
-  },
-  "laravel-pint.enable": true,
   "git.autofetch": true,
   "git.confirmSync": true,
   "git.enableSmartCommit": true,
@@ -49,21 +48,6 @@
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.lineHeight": 1.5,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vim.hlsearch": true,
-  "vim.smartRelativeLine": true,
-  "vim.leader": "<Space>",
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["leader", "w"],
-      "commands": [":w!"]
-    }
-  ],
   "window.autoDetectColorScheme": true,
   "window.restoreWindows": "none",
   "window.openFilesInNewWindow": "on",
