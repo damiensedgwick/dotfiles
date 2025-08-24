@@ -1,5 +1,3 @@
-eval "$(starship init zsh)"
-
 # -------------------------------------------------------------------
 # directory
 # -------------------------------------------------------------------
@@ -50,15 +48,6 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# -------------------------------------------------------------------
-# php 
-# -------------------------------------------------------------------
-alias pest="./vendor/bin/pest"
-
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-export XDEBUG_CONFIG="idekey=VSCODE"
 
 # -------------------------------------------------------------------
 # bun
