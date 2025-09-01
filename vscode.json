@@ -1,16 +1,18 @@
 {
-  "cursor.composer.shouldChimeAfterChatFinishes": true,
-  "cursor.composer.usageSummaryDisplay": "always",
   "diffEditor.experimental.useTrueInlineView": true,
   "diffEditor.renderSideBySideInlineBreakpoint": 5000,
   "emmet.triggerExpansionOnTab": true,
   "editor.fontFamily": "ComicShannsMono Nerd Font",
-  "editor.fontSize": 18,
+  "editor.fontSize": 20,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
   "editor.lineHeight": 1.5,
   "editor.minimap.enabled": false,
-  "editor.rulers": [80, 90, 100],
+  "editor.rulers": [
+    80,
+    90,
+    100
+  ],
   "explorer.fileNesting.patterns": {
     "*.db": "${capture}.${extname}-*",
     "*.db3": "${capture}.${extname}-*",
@@ -45,7 +47,7 @@
   "security.promptForLocalFileProtocolHandling": false,
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.fontFamily": "ComicShannsMono Nerd Font",
-  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontSize": 20,
   "terminal.integrated.lineHeight": 1.5,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.autoDetectColorScheme": true,
@@ -54,7 +56,7 @@
   "workbench.activityBar.location": "hidden",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
-  "workbench.preferredDarkColorTheme": "Cursor Dark",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
   "workbench.preferredLightColorTheme": "Default Light Modern",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false
