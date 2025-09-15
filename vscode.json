@@ -2,7 +2,7 @@
   "diffEditor.experimental.useTrueInlineView": true,
   "diffEditor.renderSideBySideInlineBreakpoint": 5000,
   "emmet.triggerExpansionOnTab": true,
-  "editor.fontFamily": "ComicShannsMono Nerd Font",
+  "editor.fontFamily": "ComicShannsMono Nerd Font Mono",
   "editor.fontSize": 20,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
