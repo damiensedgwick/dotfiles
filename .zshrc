@@ -1,3 +1,29 @@
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+# --- Plugins ---
+# Syntax highlighting should come AFTER compinit
+source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
+# Autosuggestions (works best after highlighting)
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# History substring search (needs explicit key bindings)
+source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# Autopair (independent, can be anywhere after compinit)
+source /opt/homebrew/share/zsh-autopair/autopair.zsh
+
+# --- Key bindings for history substring search ---
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
+
 # -------------------------------------------------------------------
 # directory
 # -------------------------------------------------------------------
