@@ -1,6 +1,6 @@
 {
-  "breadcrumbs.enabled": false,
-  "chat.commandCenter.enabled": false,
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "debug.allowBreakpointsEverywhere": true,
   "diffEditor.experimental.useTrueInlineView": true,
   "diffEditor.renderSideBySideInlineBreakpoint": 5000,
   "editor.fontFamily": "ComicShannsMono Nerd Font",
@@ -12,6 +12,20 @@
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
   "editor.rulers": [80, 90, 100],
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
   "emmet.triggerExpansionOnTab": true,
   "extensions.ignoreRecommendations": true,
   "git.autofetch": true,
@@ -28,9 +42,8 @@
   "window.openFilesInNewWindow": "on",
   "window.restoreWindows": "none",
   "workbench.activityBar.location": "hidden",
-  "workbench.layoutControl.enabled": false,
-  "workbench.preferredDarkColorTheme": "Default Dark Modern",
-  "workbench.preferredLightColorTheme": "Default Light Modern",
+  "workbench.preferredLightColorTheme": "Cursor Light",
+  "workbench.preferredDarkColorTheme": "Cursor Dark Midnight",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
@@ -46,5 +59,13 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "vim.smartRelativeLine": true,
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "w"],
+      "commands": [":w!"]
+    }
+  ]
 }
