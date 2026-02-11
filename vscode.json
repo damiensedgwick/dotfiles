@@ -1,17 +1,18 @@
 {
-  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "biome.suggestInstallingGlobally": false,
+   "chat.disableAIFeatures": true,
   "debug.allowBreakpointsEverywhere": true,
   "diffEditor.experimental.useTrueInlineView": true,
   "diffEditor.renderSideBySideInlineBreakpoint": 5000,
   "editor.fontFamily": "ComicShannsMono Nerd Font",
-  "editor.fontSize": 20,
+  "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
   "editor.lineHeight": 1.5,
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
-  "editor.rulers": [80, 90, 100],
+  "editor.rulers": [90, 100],
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
     "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
@@ -35,37 +36,27 @@
   "security.promptForLocalFileProtocolHandling": false,
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.fontFamily": "ComicShannsMono Nerd Font",
-  "terminal.integrated.fontSize": 20,
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.5,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.autoDetectColorScheme": true,
   "window.openFilesInNewWindow": "on",
   "window.restoreWindows": "none",
   "workbench.activityBar.location": "hidden",
-  "workbench.preferredLightColorTheme": "Cursor Light",
-  "workbench.preferredDarkColorTheme": "Cursor Dark Midnight",
   "workbench.settings.editor": "json",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false,
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "vim.smartRelativeLine": true,
-  "vim.leader": "<Space>",
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["leader", "w"],
-      "commands": [":w!"]
-    }
-  ]
+    "editor.defaultFormatter": "biomejs.biome"
+  } 
 }
