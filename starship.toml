@@ -1,0 +1,12 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+format = "$directory$character"
+scan_timeout = 10
+
+[line_break]
+disabled = true
+
+[character]
+success_symbol = '[➜](bold green)'
