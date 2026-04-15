@@ -1,12 +1,121 @@
-# Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
 add_newline = false
-format = "$directory$character"
-scan_timeout = 10
+scan_timeout = 30
+command_timeout = 1000
 
-[line_break]
-disabled = true
+format = """
+$directory$git_branch$git_state$git_status$package$mise$nodejs$bun$deno$python$rust$golang$java$kotlin$php$ruby$docker_context$terraform$kubernetes$cmd_duration
+$character"""
+
+[directory]
+format = "[📂 $path]($style)[$read_only]($read_only_style) "
+style = "bold cyan"
+truncation_length = 99
+truncate_to_repo = false
+read_only = " 🔒"
+read_only_style = "bold red"
+home_symbol = "🏠 ~"
+use_os_path_sep = true
+
+[git_branch]
+format = "[on $symbol$branch(:$remote_branch)]($style) "
+symbol = "🌿 "
+style = "bold green"
+truncation_length = 48
+truncation_symbol = "…"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bold yellow"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "bold yellow"
+conflicted = "⚔️ "
+ahead = "🚀"
+behind = "🐢"
+diverged = "😵"
+up_to_date = "✨"
+untracked = "🤷"
+stashed = "📦"
+modified = "📝"
+staged = "✅"
+renamed = "📛"
+deleted = "🗑"
+typechanged = "🔁"
+
+[cmd_duration]
+min_time = 1500
+format = "[⏱ $duration]($style) "
+style = "bold yellow"
+
+[package]
+format = "[📦 $version]($style) "
+style = "bold 208"
+display_private = true
+
+[mise]
+disabled = false
+format = "[🧰 $health]($style) "
+style = "bold purple"
+healthy_symbol = "mise"
+unhealthy_symbol = "mise!"
+
+[nodejs]
+format = "[🟢 $version]($style) "
+style = "bold green"
+
+[bun]
+format = "[🥟 $version]($style) "
+style = "bold red"
+
+[deno]
+format = "[🦕 $version]($style) "
+style = "bold green"
+
+[python]
+format = '[🐍 (${version} )(\($virtualenv\) )]($style) '
+style = "bold yellow"
+
+[rust]
+format = "[🦀 $version]($style) "
+style = "bold red"
+
+[golang]
+format = "[🐹 $version]($style) "
+style = "bold cyan"
+
+[java]
+format = "[☕ $version]($style) "
+style = "bold red"
+
+[kotlin]
+format = "[🅺 $version]($style) "
+style = "bold blue"
+
+[php]
+format = "[🐘 $version]($style) "
+style = "bold 147"
+
+[ruby]
+format = "[💎 $version]($style) "
+style = "bold red"
+
+[docker_context]
+format = "[🐳 $context]($style) "
+style = "bold blue"
+only_with_files = true
+
+[terraform]
+format = "[💠 $workspace]($style) "
+style = "bold 105"
+
+[kubernetes]
+disabled = false
+format = '[☸ $context( \($namespace\))]($style) '
+style = "bold cyan"
 
 [character]
-success_symbol = '[➜](bold green)'
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
