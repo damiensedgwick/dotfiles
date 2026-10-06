@@ -95,6 +95,12 @@ alias lla='lsd -la'
 alias lt='lsd --tree'
 
 # =========================================================
+# Aliases: laravel
+# =========================================================
+
+alias sail='./vendor/bin/sail'
+
+# =========================================================
 # Tool init
 # =========================================================
 
@@ -119,3 +125,7 @@ fi
 if command -v starship >/dev/null 2>&1; then
   eval "$(starship init zsh)"
 fi
+
+# bun completions
+[ -s "/Users/damiensedgwick/.bun/_bun" ] && source "/Users/damiensedgwick/.bun/_bun"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
